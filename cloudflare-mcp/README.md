@@ -32,6 +32,24 @@ No local server to run. No npm install. These are **remote HTTP MCP servers** ho
 
 > **Source:** All servers are maintained by Cloudflare at [github.com/cloudflare/mcp-server-cloudflare](https://github.com/cloudflare/mcp-server-cloudflare). This repo provides the configuration layer and usage guidance.
 
+> **Kiro users:** This repo is packaged as a native [Kiro Power](https://kiro.dev) — install it directly from the Kiro Powers panel to get OAuth-connected MCP servers, built-in Cloudflare skills, and guided `build-agent` / `build-mcp` workflows out of the box.
+
+---
+
+## Kiro Power
+
+If you use [Kiro](https://kiro.dev) (AWS's AI-native IDE), this repo is packaged as a native **Kiro Power** — a first-class plugin that bundles MCP servers, contextual skills, and guided workflows together.
+
+Installing it as a Power gives you more than just the MCP connection:
+- **OAuth on first connect** — no manual token setup
+- **Built-in Cloudflare skills** — contextual knowledge guides loaded automatically based on what you're building (Workers, AI agents, Durable Objects, etc.)
+- **Guided commands** — ask Kiro to "build an AI agent on Cloudflare" or "build an MCP server on Cloudflare" and it follows a full scaffold-and-deploy workflow
+- **Steering files** — task-to-skill-to-server mapping so Kiro always picks the right tool for the job
+
+To install: open the **Kiro Powers panel** → search for `cloudflare-mcp` → Install.
+
+For everyone else (Claude, Cursor, Windsurf, Zed, etc.) — keep reading for the standard MCP config setup below.
+
 ---
 
 ## Quick Start
@@ -298,4 +316,4 @@ PRs welcome — especially for:
 
 ---
 
-*Not officially affiliated with Cloudflare. Packages the official Cloudflare MCP servers for easy community use.*
+*Not officially affiliated with Cloudflare or Kiro. Packages the official Cloudflare MCP servers for easy community use across Claude, Cursor, Windsurf, Kiro, and any MCP-compatible client.*
